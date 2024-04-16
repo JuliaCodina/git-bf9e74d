@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -30,7 +30,7 @@
             </div> 
         </section>
 <!--menú-->
-    <section id="menu-index">
+    <section id="menu-7col">
             <div class="portada-menu">
                 <a href="../index.html" >Home</a>
             </div>
@@ -102,37 +102,60 @@
 
     <main>
 
-    <!--EN ESTA PÁGINA NO SE ACTUALIZÓ EL MAIN-->
-
         <section class="principal">
-            <section id="historia-clinica" >
-                <h2 >Historia Clínica</h2>
-                <section id="formulario">
-                    <!--formulario que se guarda en la página-->
-                    <form action="form.php" method="post">
-
-                        <label for="" >Celos</label>
-                        <section id="celos" >
-                            <input type="date" name="" id="" >
+            <section class="historia-clinica" >
+                <h2 class="hc-titulo">Historia Clínica</h2>
+                <!--formulario que se guarda en la página-->
+                <form action="form.php" method="post">
+                    <section class="grid-container">
+                    
+                        <div class="grid-item-hc item-1">
+                            <label for="">Celos</label>
+                        </div>
+                        <div class="grid-item-hc item-2">
+                            <input type="date" name="" id="formulario-rellenar" >  
+                        </div>
+                        <div class="grid-item-hc item-5">
                             <input type="checkbox" name="mycheckbox" id="mycheckbox">
-                            <h6>Comentarios</h6>
-                            <textarea name="" id="" cols="30" rows="1">
+                        </div>
+                        <div class="grid-item-hc item-3">
+                            <label id="comentarios">Comentarios</label>
+                        </div>
+                        <div class="grid-item-hc item-4">
+                            <textarea name="" id="formulario-rellenar" cols="30" rows="1" >
                             </textarea>
-                            <input type="button" value="Agregar Fecha" class="button">
-                        </section>
+                        </div>
 
-                        <label for="" >Alergias</label>
-                        <section id="alergias" >
+                        <div class="grid-item-hc item-6">
+                            <input type="button" value="Agregar Fecha" class="button1">
+                        </div>
+
+
+                        <div class="grid-item-hc item-7">
+                            <label for="">Alergias</label>
+                        </div>
+                        <div class="grid-item-hc item-8">
                             <input type="text" name="" id="" >
-                            <input type="checkbox" name="mycheckbox" id="mycheckbox">
-                            <h6>Comentarios</h6>
-                            <textarea name="" id="" cols="30" rows="1">
+                        </div>
+                        <div class="grid-item-hc item-9">
+                            <label id="comentarios">Comentarios</label>
+                        </div>
+                        <div class="grid-item-hc item-10">
+                            <textarea name="" id="formulario-rellenar" cols="30" rows="1" >
                             </textarea>
-                            <input type="button" value="Agregar Alergia" class="button">
-                        </section>
+                        </div>
+                        <div class="grid-item-hc item-11">
+                            <input type="checkbox" name="mycheckbox" id="mycheckbox">
+                        </div>
+                        <div class="grid-item-hc item-12">
+                            <input type="button" value="Agregar Alergia" class="button1">
+                        </div>
 
-                        <label for="">Vacunación</label>
-                        <section id="vacunacion" >
+
+                        <div class="grid-item-hc item-13">
+                            <label for="">Vacunación</label>
+                        </div>
+                        <div class="grid-item-hc item-14">
                             <select name="" id="">
                                 <option value="">Rabia</option>
                                 <option value="">Triple Felina</option>
@@ -140,45 +163,83 @@
                                 <option value="">VILEF</option>
                                 <option value="">Polivalente</option>
                             </select>
-                            <input type="date" name="" id="">
-                            <input type="checkbox" name="mycheckbox" id="mycheckbox">
-                            <h6>Comentarios</h6>
-                            <textarea name="" id="" cols="30" rows="1">
+                        </div>
+                        <div class="grid-item-hc item-15">
+                            <label id="comentarios">Comentarios</label>
+                        </div>
+                        <div class="grid-item-hc item-16">
+                            <textarea name="" id="formulario-rellenar" cols="30" rows="1" >
                             </textarea>
-                            <input type="button" value="Agregar Vacuna" class="button">
-                        </section>
-
-                        <label for="">Enfermedades</label>
-                        <section id="enfermedades">
-                            <input type="text" name="" id="">
-                            <input type="date" name="" id="">
+                        </div>
+                        <div class="grid-item-hc item-17">
                             <input type="checkbox" name="mycheckbox" id="mycheckbox">
-                            <h6>Comentarios</h6>
-                            <textarea name="" id="" cols="30" rows="1">
-                            </textarea>
-                            <input type="button" value="Agregar Enfermedad" class="button">
-                        </section>
+                        </div>
+                        <div class="grid-item-hc item-18">
+                            <input type="button" value="Agregar Vacuna" class="button1">
+                        </div>
 
-                        <label for="">Estudios Médicos</label>
-                        <section id="laboratorio" >
-                            <select name="" id="">
+
+                        <div class="grid-item-hc item-20">
+                            <label for="">Enfermedades</label>
+                        </div>
+                        <div class="grid-item-hc item-21">
+                            <input type="text" name="" id="" >
+                        </div>
+                        <div class="grid-item-hc item-22">
+                            <input type="date" name="" id="">
+                        </div>
+                        <div class="grid-item-hc item-23">
+                            <label id="comentarios">Comentarios</label>
+                        </div>
+                        <div class="grid-item-hc item-24">
+                            <textarea name="" id="formulario-rellenar" cols="30" rows="1" >
+                            </textarea>
+                        </div>
+                        <div class="grid-item-hc item-25">
+                            <input type="checkbox" name="mycheckbox" id="mycheckbox">
+                        </div>
+                        <div class="grid-item-hc item-26">
+                            <input type="button" value="Agregar Enfermedad" class="button1">
+                        </div>
+                       
+                       
+                        <div class="grid-item-hc item-27">
+                            <label for="">Estudios Médicos</label>
+                        </div>
+                        <div class="grid-item-hc item-28">
+                            <select name="" id="laboratorio">
                                 <option value="">Laboratorio</option>
                                 <option value="">Radiografías</option>
                                 <option value="">Ecografía</option>
                             </select>
+                        </div>
+                        <div class="grid-item-hc item-29">
                             <input type="date" name="" id="">
-                            <input type="button" value="Adjuntar documento" class="button">
+                        </div>
+                        <div class="grid-item-hc item-30">
+                            <label id="comentarios">Comentarios</label>
+                        </div>
+                        <div class="grid-item-hc item-31">
+                            <textarea name="" id="formulario-rellenar" cols="30" rows="1" >
+                            </textarea>
+                        </div>
+                        <div class="grid-item-hc item-32">
                             <input type="checkbox" name="mycheckbox" id="mycheckbox">
-                            <input type="button" value="Agregar Estudio" class="button">
-                        </section>
+                        </div>
+                        <div class="grid-item-hc item-33">
+                            <input type="button" value="Adjuntar documento" class="button1">
+                        </div>
+                        <div class="grid-item-hc item-34">
+                            <input type="button" value="Agregar Estudio" class="button1">
+                        </div>
                     
-                        <section class="botones">
-                            <input type="button" value="Eliminar" id="Eliminar" class="button">
-                            <input type="button" value="Guardar" id="Guardar" class="button">
-                        </section>
-            
-                    </form>
-                </section>
+                    </section>
+                                  
+                    <section class="botones">
+                        <input type="button" value="Eliminar" id="Eliminar" class="button">
+                        <input type="button" value="Guardar" id="Guardar" class="button">
+                    </section>
+                </form>
             </section>
         </section>
     </main>

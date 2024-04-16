@@ -1,0 +1,38 @@
+//comentarios en sass
+/*comentarios en sass y css*/
+
+//nesting
+//importar archivos, archivos parciales
+    //@import "ruta y archivo";
+//variables: contienen un único valor
+    //$tomato-color: tomato;
+//extend: toma los atributos de otra clase
+    //@extend .boton
+//mixins: ingresa argumentos como parametros de entrada, genera estilos con poca linea de código
+    //@mixins sizes ($width, $height){width: ;height: ;}
+    //.box {@include sizes (500px,50px);}
+
+@import "utilities/variables";
+@import "utilities/mixins";
+
+
+@import "html/mediaquery";
+
+@import "html/fonts";
+
+body{
+
+    background-color: $secondary-color;
+ 
+    #pagina{
+        margin:0%;
+        padding:0%; 
+    }
+
+    @import "html/header";
+    @import "html/main";
+    @import "html/main-hc";
+    @import "html/footer";
+}
+
+
