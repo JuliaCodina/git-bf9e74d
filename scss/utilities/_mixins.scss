@@ -95,6 +95,20 @@
             .button:hover{
                 font-weight: 900;
             }
+
+            .button1{
+                background-color: $secondary-color;
+                color: $button-color;
+                font-weight: 500;
+                font-size:20px;
+                margin-right: 20px;
+                margin-top: 20px;
+                border: none  
+            }
+        
+            .button1:hover{
+                font-weight: 900;
+            }
         }
     }
 
