@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/*comentarios en sass y css*/
 /*textos*/
 h1 {
   font-family: "Urbanist", sans-serif;
@@ -53,9 +52,9 @@ a:link, a:visited, a:hover, a:active {
   /*HEADER*/
   /*portada*/
   .portada-imagen img {
-    width: 150%;
-    margin-left: 0%;
-    padding-left: 0%;
+    width: 80%;
+    margin-left: 50px;
+    padding-left: 50px;
   }
   .portada-titulo {
     font-size: 60%;
@@ -85,8 +84,8 @@ a:link, a:visited, a:hover, a:active {
     margin-left: 0px;
   }
   /*imagenes cuenta*/
-  .img1 img {
-    width: 20%;
+  .img1 {
+    width: 1%;
   }
   /*formulario*/
   label {
@@ -107,6 +106,10 @@ a:link, a:visited, a:hover, a:active {
   .button {
     width: 40%;
     font-size: 5px;
+  }
+  /*videos*/
+  .alim-perros1 {
+    width: 40%;
   }
 }
 /*.................TABLET.................*/
